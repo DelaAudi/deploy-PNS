@@ -98,7 +98,7 @@ data_plot = pd.DataFrame({
 
 st.bar_chart(data=data_plot, x='Skenario', y='Keuntungan')
 status = classify_result(delta)
-st.subheader("📊 Status Strategi")
+st.subheader("Status Strategi")
 st.write(status)
 if delta > 0:
     st.success(
